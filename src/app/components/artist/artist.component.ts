@@ -7,15 +7,15 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   moduleId: module.id,
   selector: 'artist',
-  templateUrl: './artist.component.html'
+  templateUrl: './artist.component.html',
   providers : [SpotifyService]
 })
 
 export class ArtistComponent implements OnInit
 {
   id:string;
-  artist:Artist[];
-  albums:Album[];
+  artist:any;
+  albums:any;
 
   constructor(private _spotifyService: SpotifyService,
               private _route: ActivatedRoute)
